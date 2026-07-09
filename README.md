@@ -1,3 +1,6 @@
+> [!WARNING]
+> Royal Enfield contacted the OpenDash project, and after discussions the project is removing dash connection/projection protocols, proprietary code, and dash wallpaper functionality from future releases. OpenDash is being refocused as a clean, independent app around route preview, vehicle management, maintenance, garage, expenses, and downloadable wallpapers. Existing dash-related builds may continue to work only while the dash still allows them, but dash connection issues will not be fixed going forward.
+
 # OpenDash
 
 OpenDash is an open-source Android companion for a compatible bike dash: navigation, ride history, garage tracking, expenses, wallpapers, and media/call cards in one lightweight app.
@@ -9,7 +12,7 @@ It renders its own dash view off-screen, encodes it as H.264, and streams it ove
 ## ✨ Features
 
 - 🧭 Bike dash navigation with OSRM routing, MapLibre/OpenFreeMap preview, ETA, remaining distance, GPS status, and off-route recalculation.
-- 📲 Share destinations from Google Maps directly into OpenDash.
+- 📲 Share destinations or `geo:` links directly into OpenDash.
 - 🏍️ Vehicle profiles with active-vehicle selection, odometer, PUC/insurance dates, and service details.
 - 🧰 Garage with spare-part intervals, service history, odometer editing, and mileage from fuel fill-ups.
 - ⛽ Expenses for fuel, repairs, accessories, riding gear, food, stays, transport, and other categories.
@@ -34,7 +37,7 @@ Android 10 or newer is recommended for the Wi-Fi connection flow.
 2. Turn on the motorcycle and wait for the dash to start.
 3. Tap **Connect to dash**.
 4. Confirm the discovered dash SSID when OpenDash asks.
-5. Share a destination from Google Maps, preview it, then tap **Start navigation**.
+5. Share a destination or `geo:` link, preview it, then tap **Start navigation**.
 
 The paired dash SSID and password are stored with AndroidX encrypted preferences. Use **Forget Dash** in More/Settings when pairing again.
 
@@ -85,6 +88,8 @@ Release signing uses your own keystore through Gradle properties or CI secrets. 
 - Expense exports are created locally and shared only when you choose to share them.
 - Firebase/Google sync is optional and bring-your-own-project.
 - Release builds avoid logging full URLs, coordinates, media titles, or caller names.
+
+Google sign-in and Firestore sync setup is documented in [`docs/google-cloud-sync.md`](docs/google-cloud-sync.md).
 
 ## ⚠️ Notes
 
