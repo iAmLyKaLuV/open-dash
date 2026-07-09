@@ -1,5 +1,6 @@
 > [!WARNING]
 > Royal Enfield contacted the OpenDash project, and after discussions the project is removing dash connection/projection protocols, proprietary code, and dash wallpaper functionality from future releases. OpenDash is being refocused as a clean, independent app around route preview, vehicle management, maintenance, garage, expenses, and downloadable wallpapers. Existing dash-related builds may continue to work only while the dash still allows them, but dash connection issues will not be fixed going forward.
+
 # OpenDash
 
 OpenDash is an open-source Android companion for a compatible bike dash: navigation, ride history, garage tracking, expenses, wallpapers, and media/call cards in one lightweight app.
